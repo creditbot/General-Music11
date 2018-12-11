@@ -246,23 +246,27 @@ function play(guild, song) {
 }
 
 
-client.on('message', message => {
-    if (message.content === '1help') {
-        let helpEmbed = new Discord.RichEmbed()
-        .setTitle('**أوامر الميوزك...**')
-        .setDescription('**برفكس البوت (!)**')
-        .addField('1play', 'لتشغيل اغنية')
-        .addField('1join', 'دخول رومك الصوتي')
-        .addField('1disconnect', 'الخروج من رومك الصوتي')
-        .addField('1skip', 'تخطي الأغنية')
-        .addField('1pause', 'ايقاف الاغنية مؤقتا')
-        .addField('1resume', 'تكملة الاغنية')
-        .addField('1queue', 'اظهار قائمة التشغيل')
-        .addField('1np', 'اظهار الاغنية اللي انت مشغلها حاليا')
-        .setFooter('Generals,Music')
-      message.channel.send(helpEmbed);
-    }
+
+
+	client.on("message", message => {
+ if (message.content === "1help") {
+  const embed = new Discord.RichEmbed()
+      .setColor("RANDOM")
+      .setDescription('👑أوامر الموسيقى👑')
+	  .addField('❖-|1play', `🎸لتشغيل أغنية برآبط أو بأسم🎵`)
+	  .addField('❖-|1skip', `♠لتجآوز الأغنية الحآلية🎺`)
+	  .addField('❖-|1pause', `🚩إيقآف الأغنية مؤقتا💯`)
+	  .addField('❖-|1resume', `🎧لموآصلة الإغنية بعد إيقآفهآ مؤقتا🎵`)
+          .addField('❖-|1vol', `🔊تغيير درجة الصوت 100 - 0🔇`)
+          .addField('❖-|1stop', `🔘لإخرآج البوت من الروم❗`)
+          .addField('❖-|1queue', `🎸لمعرفة قآئمة التشغيل🎤`)
+          .addField('❖-|1music', `🔰لأرسال الأوامر بلشات🔰`)
+  message.author.send({embed});
+      message.channel.send(":white_check_mark: | Check Your DM تم الأرسال بلخاص")
+
+ }
 });
+	
 
 
 client.on('ready', () => {                           
