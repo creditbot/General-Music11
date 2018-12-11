@@ -293,16 +293,9 @@ client.on('message', message => {
 });
 
 
-
-client.on('ready', () => {
-   console.log(`══════════ஜ۩۞۩ஜ════════════  `);
-      console.log(`Generals Bot- Script By | ＰＬｏᎥ 丅`);
-        console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By | ＰＬｏᎥ 丅 ' `);
-    console.log(`══════════ஜ۩۞۩ஜ════════════  `);
-  console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`1play | Last Music`,"http://twitch.tv/Rqmz Shop")
-client.user.setStatus("dnd")
+client.on('ready', () => {                           
+client.user.setGame(`Generals,Music 1play`,'https://www.twitch.tv/fofodiscord');                                                                                                                                                                                                                                                                                                                                                                                                                            
 });
+
 
 client.login(process.env.BOT_TOKEN);
