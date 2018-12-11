@@ -247,19 +247,19 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === 'help') {
+    if (message.content === '1help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت (!)**')
-        .addField('play', 'لتشغيل اغنية')
-        .addField('join', 'دخول رومك الصوتي')
-        .addField('disconnect', 'الخروج من رومك الصوتي')
-        .addField('skip', 'تخطي الأغنية')
-        .addField('pause', 'ايقاف الاغنية مؤقتا')
-        .addField('resume', 'تكملة الاغنية')
-        .addField('queue', 'اظهار قائمة التشغيل')
-        .addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
-        .setFooter('(general_commands) لاظهار الاوامر العامة')
+        .addField('1play', 'لتشغيل اغنية')
+        .addField('1join', 'دخول رومك الصوتي')
+        .addField('1disconnect', 'الخروج من رومك الصوتي')
+        .addField('1skip', 'تخطي الأغنية')
+        .addField('1pause', 'ايقاف الاغنية مؤقتا')
+        .addField('1resume', 'تكملة الاغنية')
+        .addField('1queue', 'اظهار قائمة التشغيل')
+        .addField('1np', 'اظهار الاغنية اللي انت مشغلها حاليا')
+        .setFooter('Generals,Music')
       message.channel.send(helpEmbed);
     }
 });
